@@ -1,0 +1,109 @@
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 26px;
+	padding: 0;
+	*zoom: 1;
+}
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+/** THEME
+===================================*/
+.bx-wrapper .bx-viewport {
+	border-radius: 10px;
+	background: #fff;
+	border: none;
+	box-shadow: none;
+	left: 0;
+  	transform: translatez(0);
+  	-ms-transform: translatez(0);
+  	-o-transform: translatez(0);
+	-moz-transform: translatez(0);
+	-webkit-transform: translatez(0);
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+	background: url('../img/bx_loader.gif') center center no-repeat #fff;
+	height: 100%;
+	min-height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+	color: #666;
+	font-family: Arial;
+	font-size: .85em;
+	font-weight: bold;
+	padding-top: 20px;
+	text-align: center;
+}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #6b685e;
+	border-radius: 50%;
+	box-shadow: inset 1px -1px 0px 0px #a59e8e;
+	color: #cbcbcb;
+	display: block;
+	font: 700 12px/1.05 Arial, Helvetica, sans-serif;
+	height: 10px;
+	margin: 0 4px;
+	outline: 0;
+	width: 10px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+
+
+
+.bx-pager-link{
+	background: #6b685e;
+	color: #fff;
+	font: bold 12px/14px Arial, Helvetica, sans-serif;
+	margin: 0 5px 0 4px;
+	padding: 6px 15px 17px 8px;
+	text-decoration: none;
+}
+.bx-pager-link.active{
+	padding: 8px 17px 19px 10px;
+	margin-top: 5px;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	bottom: 24px;
+	right: 96px;
+	text-align: right;
+	width: 300px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover{
+	box-shadow: none;
+	color: #fff;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+	background: #43ac2d;
+	background: linear-gradient(0deg, #1a7912 0%, #6cdf48 100%);
+	box-shadow: none;
+	color: #fff;
+}
+.bx-controls-direction{
+	display: none;
+}

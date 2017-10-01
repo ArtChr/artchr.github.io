@@ -1,0 +1,34 @@
+html{
+	font: 14px/1.1 $main-font;
+	overflow-x: hidden;
+}
+body{
+	background: #fff;
+	text-align: center;
+	overflow-x: hidden;
+  min-width: 320px;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+p{
+	margin: 0;
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+input,
+textarea{
+  &:focus{
+    border: 1px solid black; 
+  }
+  &.is-error{
+    border: 1px dotted red;
+    & ~ label.is-error{
+      display: block !important;
+      color: red;
+      font-size: 12px;
+    }
+  }
+}

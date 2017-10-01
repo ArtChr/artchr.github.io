@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1024">
+	<title>Project</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+	<link media="all" rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/select2.min.css" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".js-example-placeholder-single-big").select2({
+				placeholder: "Select your problem..",
+			});
+			$(".js-example-placeholder-single-small").select2({
+				placeholder: "Select a department",
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<div class="page">
+		<div class="wrapper">
+
+			<header id="header">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.png" alt="image description">
+					</a>
+					<strong>hq</strong>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li><a href="#">home</a></li>
+						<li><a href="#">pricing</a></li>
+						<li><a href="#">how it works</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main id="main">
+				<section class="title-block">
+					<div id="container">
+						<h1>Do you have <a href="#">questions?</a></h1>
+						<img src="images/question.png" alt="image description">
+					</div>
+				</section>
+
+				<section class="info-block">
+					<h1>If you couldn’t find answer in our <a href="#">FAQ</a>..</h1>
+					<div class="img-separate">
+						<span><img src="images/letter.png" alt="image description"></span>
+					</div>		
+					<form class="info-form" action="#" method="post">
+						<fieldset>
+							<h1>Then drop us a line</h1>
+							<p>just fill out this simple form:</p>
+							<div class="row">
+								<select class="js-example-placeholder-single-big">
+									<option selected value="" disabled>Select your problem..</option>
+									<option value="p1">Problem 1</option>
+									<option value="p2">Problem 2</option>
+									<option value="p3">Problem 3</option>
+								</select>
+								<select class="js-example-placeholder-single-small small">
+									<option selected value="" disabled>Select a department</option>
+									<option value="d1">department 1</option>
+									<option value="d2">department 2</option>
+									<option value="d3">department 3</option>
+								</select>
+							</div>
+
+							<div class="row">
+								<textarea cols="139" rows="9" placeholder="Whats your issue? Write us as many details as possible here.."></textarea>
+							</div>
+
+							<div class="row">
+								<div class="radio-block">	
+									<input type="radio" class="radio" name="radio" id="rad1" checked="checked">
+									<label for="rad1">Option 1</label>
+									<input type="radio" class="radio" name="radio" id="rad2">
+									<label for="rad2">Option 2</label>
+									<input type="radio" class="radio" name="radio" id="rad3">
+									<label for="rad3">Option 3</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<input type="email" placeholder="Your email">
+								<input type="text" placeholder="Your account">
+							</div>
+
+							<div class="row">
+								<input type="checkbox" class="checkbox" id="check1" checked="checked">
+								<label for="check1">Do you want to create an account?</label>
+								<input type="checkbox" class="checkbox" id="check2">
+								<label for="check2">Subscribe to news feed</label>
+							</div>
+
+							<div class="row">
+								<button type="submit"><span>Submit my question</span><i class="fa fa-check" aria-hidden="true"></i></button>
+							</div>
+						</fieldset>
+					</form>
+				</section>
+			</main>
+
+			<footer id="footer">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.png" alt="image description">
+					</a>
+					<strong>hq</strong>
+				</div>
+				<span class="copyright">Copyright 2013 &copy; <a href="#">10oz.com</a>. All Rights Reserved.</span>
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</footer>
+		</div>
+	</div>
+
+</body>
+</html>

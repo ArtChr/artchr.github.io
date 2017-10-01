@@ -1,0 +1,135 @@
+.slide{
+  background: url(../img/bg-header.jpg) center;
+  background-size: cover;
+  height: 100vh;
+  outline: none;
+  &_content{
+    padding: 68px 0;
+    text-align: center;
+    @include phonelandscape{
+      padding-top: 50px;
+    }
+    @include phoneportrait{
+      padding-top: 30px;
+    }
+  }
+  &_a{
+    text-decoration: none;
+    outline: none;
+  }
+  &_logo{
+    display: inline-block !important;
+    padding: 0 0 64px;
+    @include phonelandscape{
+      width: 30%;
+    }
+    @include phoneportrait{
+      padding-bottom: 30px;
+    }
+  }
+  &_title{
+    color: #fff;
+    font: 400 50px/1.24 $main-font;
+    text-transform: uppercase;
+    @include phonelandscape{
+      font-size: 40px;
+    }
+    @include phoneportrait{
+      font-size: 20px;
+    }
+  }
+}
+.bold{
+  font-weight: 700;
+}
+.search{
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 1px 1px 0px #e6e6e6;
+  color: #938e8e;
+  display: inline-block;
+  font: 400 16px/1.2 $main-font;
+  margin: -17.5% 0 57px;
+  padding: 29px 0 0;
+  position: relative;
+  width: 334px;
+  z-index: 100;
+  @include phonelandscape{
+    font-size: 12px;
+    width: 280px;
+  }
+  &_row{
+    padding: 0 33px;
+    margin: 0 0 23px;
+    @include phonelandscape{
+      padding: 0 28px;
+    }
+  }
+  &_input{
+    color: #b4adad;
+    font: 400 16px/1.05 $main-font;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    padding: 7px 12px;
+    width: 100%;
+    box-shadow: 0px 1px 1px 0px #e6e6e6;
+    @include phonelandscape{
+      font-size: 14px;
+    }
+    // &:focus {
+    //   border: 1px solid black; 
+    // }
+  }
+  &_img{
+    margin: 0 0 25px;
+    width: 100%;
+  }
+  &_btn{
+    color: #fff;
+    background: #227dd3;
+    font: 400 26px/1.05 $main-font;
+    text-transform: uppercase;
+    width: 192px;
+    padding: 10px 0;
+    @include phonelandscape{
+      font-size: 18px;
+      width: 160px;
+    }
+    &:hover{
+      background: darken(#227dd3, 7%);
+    }
+    &:active{
+      background: darken(#227dd3, 14%);
+    }
+  }
+}
+.infobox{
+  display: none;
+  color: red;
+  font-size: 12px;
+  &.is-wrong{
+    display: block;
+  }
+}
+.is-valid{
+
+}
+@media only screen and (max-height:799px){
+  .search{
+    margin-top: -6%;
+  }
+}
+@media only screen and (max-height:650px){
+  .search{
+    margin-top: -3%;
+  }
+}
+@media only screen and (max-width:320px){
+  .slide_content{
+    padding-top: 90px;
+  }
+  .search{
+    margin-top: -10%;
+  }
+}

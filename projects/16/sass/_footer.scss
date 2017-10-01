@@ -1,0 +1,19 @@
+.footer {
+  background: #43a06d;
+  color: #fff;
+  font: 400 14px/1.05 $main-font;
+  padding: 18px 0 16px;
+  text-align: center;
+  @include phoneportrait{
+    font-size: 11px;
+  }
+}
+.copyright{
+  &_author{
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

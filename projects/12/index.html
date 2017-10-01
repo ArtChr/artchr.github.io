@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0 "> -->
+	<meta name="viewport" content="width=1200">
+	<title>Flat Mate</title>
+	<link media="all" rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:100,100i,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link media="all" rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+	<div class="page">
+		<div class="wrapper">
+			<header id="header">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.png">
+						<strong>Flat Mate</strong>
+					</a>
+				</div>
+				<div class="login">
+					<span>Have an Account ?</span>
+					<a class="button">Login</a>
+				</div>
+				<section class="header-section">
+					<img class="img-header-section" src="images/dialog.png">
+					<h1>Lorem ipsum dolor sit amet</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a class="button">Read More</a>
+				</section>
+			</header>
+			<main id="main">
+				<section class="contact">
+					<img class="img-contact" src="images/letter.png">
+					<aside class="buttons-contact">
+						<a class="rnd-button" href="#">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</a>
+						<a class="rnd-button" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</aside>
+					<article class="content-contact">
+						<h1>Lorem ipsum dolor sit amet</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</article>
+				</section>
+				<section class="intro-2">
+					<ul class="bxslider">
+						<li>
+							<h1>The Modern Era of Web Designing</h1>
+							<p>We make wireframe ultra fast, leak proof</p>
+							<img src="images/slide-1.png">
+						</li>
+						<li>
+							<h1>Lorem ipsum dolor sit amet, consectetur adipisicing. </h1>
+							<p>Lorem ipsum dolor.</p>
+							<img src="images/slide-1.png">
+						</li>
+					</ul>
+				</section>
+				<section class="pricing">
+					<h1>A wireframe is the primitive skeleton of your website.</h1>
+					<p>Pick a plan from below to get started! Already 20000+ websites and webprojects have been successfully wireframed with HotGloo.</p>
+					<div class="price-block">
+						<ul class="low-price">
+							<li>Free</li>
+							<li class="price">$0/Month</li>
+							<li>1 Project</li>
+							<li>5 Members</li>
+							<li>5 GB</li>
+						</ul>
+						<a href="#" class="button">Sign Up</a>
+					</div>
+					<div class="price-block">
+						<ul class="medium-price">
+							<li>Professional</li>
+							<li class="price">$50/Month</li>
+							<li>20 Project</li>
+							<li>50 Members</li>
+							<li>100 GB</li>
+						</ul>
+						<a href="#" class="button">Buy Now</a>
+					</div>
+					<div class="price-block">
+						<ul class="high-price">
+							<li>Enterprise</li>
+							<li class="price">$90/Month</li>
+							<li>Unlimited</li>
+							<li>Unlimited</li>
+							<li>500 GB</li>
+						</ul>
+						<a href="#" class="button">Buy Now</a>
+					</div>
+				</section>
+				<section class="info-section">
+					<h1>A wireframe is the primitive skeleton of your website.</h1>
+				</section>
+				<section class="callback">
+					<img src="images/form-letter.png">
+					<form class="callback-form">
+						<fieldset>
+							<div class="row column2">
+								<label for="message">Message</label><br>
+								<textarea id="message" rows="9" cols="36"></textarea>
+							</div>
+							<div class="row">
+								<label for="name">Name</label><br>
+								<input type="text" id="name">
+							</div>
+							<div class="row">
+								<label for="email">E-Mail</label><br>
+								<input type="email" id="email">
+							</div>
+							<button class="button" type="submit">Send</button>
+						</fieldset>
+					</form>
+				</section>
+			</main>
+			
+			<footer id="footer">
+				<div class="logo-footer">
+					<a href="#">
+						<img src="images/logo.png">
+						<strong>Flex Mate |</strong>
+					</a>
+					<span>Designed By <a href="#">WWW.CSSAUTHOR.COM</a></span>
+				</div>
+				<div class="social-footer">
+					<a class="rnd-button" href="#">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<a class="rnd-button" href="#">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	window.jQuery || document.write('<script type="text/javascript" src="js/jquery-2.2.4.min.js"><\/script>');
+</script>
+<script src="js/jquery.main.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			auto: true,
+			pause: 5000
+		});
+	});
+</script>
+</html>

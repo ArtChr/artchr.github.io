@@ -1,0 +1,567 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+* {max-height: 1000000px;}
+body{
+	margin:0;
+	font: 14px/18px 'Trebuchet MS', Arial, sans-serif;
+	color:#000;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust: none;
+	background: #c2bfb5;
+}
+img{
+	border-style:none;
+	vertical-align:top;
+}
+a{
+	color:#4b4b80;
+	text-decoration:underline;
+}
+a:hover{text-decoration:none;}
+a:active {background-color: transparent;}
+input, textarea, select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color:#1e1b1b;
+}
+main, header, footer, article, section, hgroup, nav, figure, aside { display: block; }
+figure {
+	margin:0;
+	padding:0;
+}
+form, fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+input[type=submit],
+input[type=text],
+input[type=password],
+input[type=file],
+textarea{-webkit-appearance:none;}
+textarea,
+input[type=submit],
+input[type=text]{-webkit-border-radius:0;}
+input[type=image],
+button{
+	padding:0;
+	border:none;
+}
+input[type="submit"]::-moz-focus-inner{border:0;}
+input[type="submit"]{cursor:pointer;}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+body {
+	background: #1a1a1a url('../images/bg-main.png') no-repeat 50% 104px;
+}
+.page {
+	overflow-x: hidden;
+}
+.wrapper {
+	width: 959px;
+	margin: 0 auto;
+}
+p {
+	margin: 0;
+}
+#header {
+	padding: 0 0 0 179px;
+	position: relative;
+	margin: 0 0 39px;
+}
+#header img {
+	position: absolute;
+		top: 4px;
+		left: 12px;
+	z-index: 1;
+}
+#login {
+	color: #fff;
+	background: #303c40;
+	padding: 8px 9999px 5px;
+	margin: 0 -9999px;
+	font-size: 12px;
+}
+#login #in {
+	margin: -3px 5px 0 0;
+	padding: 0;
+	display: inline;
+	font-size: 14px;
+	float: right;
+}
+#login #in li {
+	display: inline;
+	border-right: 1px solid #fefefe;
+	padding: 0 7px 0 0;
+	margin: 0 3px 0 0;
+}
+#login #in li:last-child {
+	border: none;
+	margin: 0;
+}	
+#login a {
+	color: #fff;
+	text-decoration: none;
+}
+#login a:hover {
+	text-decoration: underline;
+}
+
+#logo-menu {
+	background-color: #000;
+	box-shadow: 0px 1px 5px 0px rgba(3, 7, 5, 0.35);
+	margin: 0 -9999px;
+	padding: 0 9999px;
+	color: #fff;
+}
+#nav {
+	overflow: hidden;
+	margin: 0px 17px 0 0;
+}
+#nav ul {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+#nav li {
+	display: inline-block;
+}
+#nav li a {
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	padding: 31px 14px 30px;
+	text-decoration: none;
+	vertical-align: top;
+}
+#nav li:hover,
+#nav li.active {
+	background: linear-gradient(0deg, #e67a00 0%, #ff9900 100%);
+}
+#nav li:active {
+	background: linear-gradient(0deg, #d26f00 0%, #ea8c00 100%);
+}
+
+
+
+#main {
+	position: relative;
+}
+#main:after {
+	content: '';
+	display: table;
+	clear: both;
+	width: 100%;
+}
+#decor {
+	position: absolute;
+	left: -54px;
+	top: -1px;
+}
+.article {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px 0px rgba(3, 7, 5, 0.75);
+	padding: 22px 19px 43px;
+	float: left;
+	width: 700px;
+	margin: -7px 0 0;
+}
+.header-block {
+	margin: 0 0 47px;
+}
+h1 {
+	font: bold 30px/36px 'Trebuchet MS', Arial, sans-serif;
+	margin: 0 0 21px 0;
+	padding: 0 28px 0;
+}
+.price-block {
+	float: left;
+	margin: 0 21px 0 0;
+	padding: 7px 0 0;
+	width: 200px;
+}
+.price-sticker {
+	background: linear-gradient(0deg, #e37a23 0%, #fc992b 100%);
+	border-radius: 40px 5px 5px 40px;
+	box-shadow: 0px 0px 7px 0px rgba(3, 7, 5, 0.25);
+	color: #fff;
+	display: block;
+	font-size: 36px;
+	letter-spacing: 2px;
+	margin: 0 -2px 13px -50px;
+	padding: 21px 30px;
+	text-align: right;
+}
+.btn-price {
+	background: linear-gradient(0deg, #8ac74e 0%, #9dda5a 100%);
+	box-shadow: inset -1px -1px 0px 0px rgba(0,0,0,0.2), inset 1px 1px 0px 0px rgba(256,256,256,0.4);
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 0 0 10px;
+	padding: 18px 0 15px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 1px 1px rgba(3, 7, 5, 0.25);
+}
+.btn-price:hover {
+	background: linear-gradient(0deg, #95d854 0%, #adee65 100%);
+}
+.btn-price:active {
+	background: linear-gradient(0deg, #8ac74e 0%, #9dda5a 100%);
+}
+
+
+.table {
+	background: linear-gradient(0deg, #b3b3b3 0%, #cccccc 100%);
+	border-collapse: collapse;
+	border-left: 1px solid #d7d7d7;
+	border-top: 1px solid #e2e2e2;
+	table-layout: fixed;
+	width: 100%;
+	margin: 0 0 14px;
+}
+.table tr {
+	height: 70px;
+}
+.table td {
+	box-shadow: inset -1px -1px 0px 0px rgba(0,0,0,0.2), inset 1px 1px 0px 0px rgba(256,256,256,0.4);
+	vertical-align: center;
+	text-align: center;
+	padding: 2px 5px;
+	font: bold 14px/16px 'Trebuchet MS', Arial, sans-serif;
+	color: #fff;
+}
+.table td span {
+	font-size: 11px;
+	color: #000;
+	display: block;
+	margin: 0 0 1px;
+}
+.table tr:nth-child(2) td {
+	padding: 0 15px;
+}
+.table td img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.table div {
+	color: #000;
+	display: inline-block;
+	font-size: 11px;
+	margin: 0 2px 0 0;
+}
+.table div span {
+	display: block;
+	color:  #fff;
+	font-size: 14px;
+	margin: 0 0 2px 0;
+}
+
+
+#deal-status img {
+	float: left;
+	margin: 0 6px 0 0;
+}
+#deal-status ul {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#deal-status li {
+	padding: 7px 12px;
+	display: inline-block;
+	border-left: 1px solid #bfbfbf;
+}
+#deal-status li:first-child {
+	font-weight: bold;
+	padding: 7px 9px 7px 0;
+	border: 0;
+}
+#deal-status li:last-child {
+	padding: 7px 0 7px 12px;
+}
+
+
+.header-image {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	padding: 4px;
+}
+.header-image ~ img {
+	width: 100%;
+}
+.share {
+	font: bold 12px/20px 'Trebuchet MS', Arial, sans-serif;
+	float: right;
+	padding: 10px 5px 5px;
+}
+.share span {
+	margin: 0 5px 0 0;
+}
+
+
+.location {
+	float: left;
+	margin: 0 21px 0 0;
+	width: 200px;
+}
+h2 {
+	text-transform: uppercase;
+	font: bold 12px/14px 'Trebuchet MS', Arial, sans-serif;
+	color: #303c40;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 0 0 5px;
+	margin: 0 0 13px;
+}
+.map {
+	margin: 3px 0 14px;
+}
+.address {
+	font-style: normal;
+}
+.bold {
+	font-weight: bold;
+}
+.details {
+	overflow: hidden;
+}
+.details p {
+	margin: 0 0 18px;
+}
+.details ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.details li:before {
+	content: "• ";
+	color: #f6911e;
+	margin: 0 10px 0 0;
+}
+
+
+
+#sidebar {
+	background: url('../images/bg-sidebar.png');
+	padding: 14px 17px 12px;
+	border-radius: 0 10px 10px 0;
+	overflow: hidden;
+}
+h3 {
+	font: bold 20px/22px 'Trebuchet MS', Arial, sans-serif;
+	margin: 0 0 11px 1px;
+	color: #fff;
+}
+#more-deals {
+	overflow: hidden;
+	margin: 0 0 18px 0;
+}
+.deal {
+	font: 12px/18px 'Trebuchet MS', Arial, sans-serif;
+	margin: 0 0 14px;
+	overflow: hidden;
+}
+.deal a {
+	color: #fff;
+	text-decoration: none;
+}
+.deal a:hover p {
+	text-decoration: underline;
+}
+.deal img {
+	float: left;
+	margin: 4px 8px 0 0;
+}
+.deal p {
+	overflow: hidden;
+	margin: 0;
+	max-height: 36px;
+}
+.deal span {
+	color: #f90;
+}
+.btn-sidebar {
+	background: linear-gradient(0deg, #e67a00 0%, #ff9900 100%);
+	color: #fff;
+	float: right;
+	font: bold 11px/12px Arial, sans-serif;
+	margin: -6px 0 0;
+	padding: 4px 10px;
+	text-decoration: none;
+	box-shadow: inset -1px -1px 0px 0px rgba(0,0,0,0.2), inset 1px 1px 0px 0px rgba(256,256,256,0.4);
+}
+.btn-sidebar:hover {
+	background: linear-gradient(0deg, #fc8e13 0%, #fdb03d 100%);
+}
+.btn-sidebar:active {
+	background: linear-gradient(0deg, #e67a00 0%, #ff9900 100%);
+}
+
+
+#membership img {
+	margin: 0 0 14px;
+}
+#membership {
+	box-shadow: inset -1px -1px 0px 0px rgba(0,0,0,0.2), inset 1px 1px 0px 0px rgba(256,256,256,0.4);
+	padding: 10px 6px 6px 3px;
+	background: #fa9601;
+	overflow: hidden;
+	margin: 0 0 18px;
+}
+#membership .btn-sidebar {
+	background: #232323;
+}
+#membership .btn-sidebar:hover {
+	background: #444;
+}
+#membership .btn-sidebar:active {
+	background: #232323;
+}
+
+
+#next-game {
+	color: #fff;
+	font: 13px/18px 'Trebuchet MS', Arial, sans-serif;
+	margin: 0 0 17px;
+}
+#next-game a {
+	color: #fa9601;
+}
+#next-game p {
+	font: bold 14px/18px 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+#facebook {
+	margin: 0 -19px;
+}
+
+#footer {
+   margin: -8px -9999px 0;
+   padding: 0 9999px;
+   background: #000;
+	color: #fff;
+}
+#footer-holder {
+	padding: 35px 0 16px 20px;
+	position: relative;
+}
+#footer-holder:after {
+	content: '';
+	display: table;
+	clear: both;
+	width: 100%;
+}
+
+
+.block-footer {
+	float: left;
+	font-size: 11px;
+	margin: 0 34px 0 0;
+	width: 90px;
+}
+h4 {
+	font: 11px/18px 'Trebuchet MS', Arial, sans-serif;
+	margin: 0 0 6px;
+	text-transform: uppercase;
+}
+#nav-footer ul {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav-footer li:before {
+	content: "• ";
+	color: #f6911e;
+	margin: 0 6px 0 0;
+}
+#nav-footer li {
+	margin: 0 0 6px;
+}
+.block-footer a {
+	color: #fff;
+	text-decoration: none;
+}
+.block-footer a:hover {
+	text-decoration: underline;
+}
+
+#social {
+	margin: 0 35px 0 0;
+	padding: 0;
+	text-align: right;
+	position: absolute;
+		bottom: 28px;
+		left: 514px;
+}
+#social li {
+	display: inline-block;
+}
+
+
+#logo-footer {
+	float: right;
+	width: 316px;
+	position: relative;
+}
+
+#tweet {
+	font-size: 14px;
+	padding: 12px 12px;
+	border-radius: 5px;
+	background: #262626;
+	position: relative;
+	margin: 0 0 18px;
+}
+#tweet:after {
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50px;
+	background: #262626;
+	position: absolute;
+		bottom: -6px;
+		right: 62px;
+}
+#tweet p:after {
+	content: '';
+	display: block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50px;
+	background: #262626;
+	position: absolute;
+		bottom: -27px;
+		right: 50px;
+}
+#tweet a {
+	color: #f90;
+	font-size: 12px;
+}
+#tweet span {
+	color: #9b9b9b;
+	font-size: 11px;
+}
+#logo-ftr {
+	float: left;
+}
+#bird {
+	float: right;
+	position: absolute;
+   	bottom: 2px;
+   	right: 1px;
+}
